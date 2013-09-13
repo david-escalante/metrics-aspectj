@@ -10,7 +10,7 @@
         <version>7</version>
     </parent>
 
-    <groupId>org.mattcarrier</groupId>
+    <groupId>org.mattcarrier.metrics</groupId>
     <artifactId>metrics-aspectj</artifactId>
     <version>3.0.1-SNAPSHOT</version>
     <packaging>bundle</packaging>
