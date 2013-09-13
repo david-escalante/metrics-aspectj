@@ -66,6 +66,18 @@ Weave the aspects (example is of compile-time weave using maven):
     </plugin>
     ...
 
+Set the MetricRegistry during application startup:
+
+    ...
+    MetricRegistryStore.getInstance().setRegistry(new MetricRegistry());
+    ...
+    
+    // if using dropwizard
+    public void run(Configuration configuration, Environment environment) throws Exception {
+        MetricRegistryStore.getInstance().setRegistry(environment.metrics());
+        ...
+    }
+
 License
 -----------
 Apache Software License 2.0<br>
