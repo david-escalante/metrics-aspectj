@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2013 Matthew R Carrier (mcarrieruri@gmail.com)
+ * Copyright (C) 2013 Astonish Results (mcarrier@astonish.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,16 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.mattcarrier.metrics.aspectj.metric;
+package com.astonish.metrics.aspectj.metric;
 
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
-import org.mattcarrier.metrics.aspectj.MetricAdvice;
+
+import com.astonish.metrics.aspectj.MetricAdvice;
 
 
 @Aspect
 public class MetricAdviceImpl extends MetricAdvice {
-    @Pointcut("within(org.mattcarrier.metrics.aspectj..*)")
+    @Pointcut("within(com.astonish.metrics.aspectj..*)")
     public void scope() {
     }
 }

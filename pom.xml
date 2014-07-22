@@ -4,15 +4,9 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>org.sonatype.oss</groupId>
-        <artifactId>oss-parent</artifactId>
-        <version>7</version>
-    </parent>
-
-    <groupId>org.mattcarrier.metrics</groupId>
+    <groupId>com.astonish</groupId>
     <artifactId>metrics-aspectj</artifactId>
-    <version>3.0.1-SNAPSHOT</version>
+    <version>3.0.2</version>
     <packaging>bundle</packaging>
 
     <name>Aspect-oriented metrics based on codahale/metrics and aspectj.</name>
@@ -21,7 +15,7 @@
     <inceptionYear>2013</inceptionYear>
 
     <properties>
-        <metrics.version>3.0.1</metrics.version>
+        <metrics.version>3.0.2</metrics.version>
         <compile.version>1.7</compile.version>
         <aspectj.version>1.7.3</aspectj.version>
     </properties>
@@ -53,6 +47,19 @@
         <system>github</system>
         <url>http://github.com/mattcarrier/metrics-aspectj/issues</url>
     </issueManagement>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>deployment</id>
+            <name>Snapshots</name>
+            <url>https://astonishdev.net/nexus/content/repositories/thirdpartysnapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>deployment</id>
+            <name>Releases</name>
+            <url>https://astonishdev.net/nexus/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
 
     <dependencies>
         <dependency>
@@ -164,8 +171,8 @@
                 <configuration>
                     <header>com/mycila/maven/plugin/license/templates/APACHE-2.txt</header>
                     <properties>
-                        <owner>Matthew R Carrier</owner>
-                        <email>mcarrieruri@gmail.com</email>
+                        <owner>Astonish Results</owner>
+                        <email>mcarrier@astonish.com</email>
                     </properties>
                     <includes>
                         <include>src/**/*.java</include>

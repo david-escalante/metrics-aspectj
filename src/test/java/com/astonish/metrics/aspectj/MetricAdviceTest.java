@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2013 Matthew R Carrier (mcarrieruri@gmail.com)
+ * Copyright (C) 2013 Astonish Results (mcarrier@astonish.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.mattcarrier.metrics.aspectj;
+package com.astonish.metrics.aspectj;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
@@ -23,9 +23,9 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.mattcarrier.metrics.aspectj.MetricRegistryStore;
-import org.mattcarrier.metrics.aspectj.metric.Metriced;
 
+import com.astonish.metrics.aspectj.MetricRegistryStore;
+import com.astonish.metrics.aspectj.metric.Metriced;
 import com.codahale.metrics.Meter;
 import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.Timer;
