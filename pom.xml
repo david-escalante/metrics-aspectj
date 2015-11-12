@@ -6,7 +6,7 @@
 
     <groupId>com.astonish</groupId>
     <artifactId>metrics-aspectj</artifactId>
-    <version>3.0.2</version>
+    <version>3.1.1-SNAPSHOT</version>
     <packaging>bundle</packaging>
 
     <name>Aspect-oriented metrics based on codahale/metrics and aspectj.</name>
@@ -15,9 +15,9 @@
     <inceptionYear>2013</inceptionYear>
 
     <properties>
-        <metrics.version>3.0.2</metrics.version>
+        <metrics.version>3.1.1</metrics.version>
         <compile.version>1.7</compile.version>
-        <aspectj.version>1.7.3</aspectj.version>
+        <aspectj.version>1.7.4</aspectj.version>
     </properties>
 
     <developers>
@@ -63,13 +63,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.codahale.metrics</groupId>
+            <groupId>io.dropwizard.metrics</groupId>
             <artifactId>metrics-core</artifactId>
             <version>${metrics.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>com.codahale.metrics</groupId>
+            <groupId>io.dropwizard.metrics</groupId>
             <artifactId>metrics-annotation</artifactId>
             <version>${metrics.version}</version>
             <scope>compile</scope>
@@ -83,7 +83,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.11</version>
+            <version>4.12</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -167,7 +167,7 @@
             <plugin>
                 <groupId>com.mycila</groupId>
                 <artifactId>license-maven-plugin</artifactId>
-                <version>2.5</version>
+                <version>2.11</version>
                 <configuration>
                     <header>com/mycila/maven/plugin/license/templates/APACHE-2.txt</header>
                     <properties>
